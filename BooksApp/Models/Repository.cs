@@ -19,6 +19,26 @@ namespace BooksApp.Models{
         public static void CreateProduct(Product entity){
             _products.Add(entity);
         }
+
+        public static void EditProduct(Product updateProduct){
+            var entity = _products.FirstOrDefault(p=>p.ProductId == updateProduct.ProductId);
+
+            if(entity != null){
+                entity.Name = updateProduct.Name;
+                entity.Pages = updateProduct.Pages;
+                entity.Image = updateProduct.Image;
+                entity.CategoryId = updateProduct.CategoryId;
+                entity.IsActive = updateProduct.IsActive;
+            }
+        }
+
+        public static void DeleteProduct(Product entity){
+            var PrdEntity = _products.FirstOrDefault(p=>p.ProductId == entity.ProductId);
+
+            if(PrdEntity != null){
+                _products.Remove(PrdEntity);
+            }
+        }
         public static List<Category> Categories{get{return _categories;}}
     }
 }

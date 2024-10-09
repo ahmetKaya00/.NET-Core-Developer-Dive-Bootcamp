@@ -19,7 +19,6 @@ namespace BooksApp.Models{
         
         public decimal Pages {get;set;}
 
-        [Required(ErrorMessage = "Gerekli Alan")]
         [Display(Name = "Görsel")]
         public string? Image {get;set;} = string.Empty;
         public bool IsActive {get;set;}

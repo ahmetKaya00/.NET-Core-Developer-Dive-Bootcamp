@@ -28,6 +28,7 @@
             <th style="width: 100px;">@Html.DisplayNameFor(m => m.Products[0].Image)</th>
             <th>@Html.DisplayNameFor(m => m.Products[0].Name)</th>
             <th>@Html.DisplayNameFor(m => m.Products[0].Pages)</th>
+            
             <th style="width: 130px;">Settings</th>
         </tr>
     </thead>
@@ -41,8 +42,8 @@
                 <td>@prd.Name</td>
                 <td>@prd.Pages</td>
                 <td>
-                    <a href="" class="btn btn-sm btn-warning">Edit</a>
-                    <a href="" class="btn btn-sm btn-danger">Delete</a>
+                    <a asp-controller="Home" asp-action="Edit" asp-route-id="@prd.ProductId" class="btn btn-sm btn-warning">Edit</a>
+                    <a asp-controller="Home" asp-action="Delete" asp-route-id="@prd.ProductId" class="btn btn-sm btn-danger">Delete</a>
                 </td>
             </tr>
         }
