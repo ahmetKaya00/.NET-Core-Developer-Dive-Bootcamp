@@ -6,5 +6,6 @@ namespace EfCoreApp.Data{
         [Key]
         public int BootcampId {get;set;}
         public string? Baslik {get;set;}
+        public ICollection<BootcampKayit> KursKayitlari {get;set;} = new List<BootcampKayit>();
     }
 }

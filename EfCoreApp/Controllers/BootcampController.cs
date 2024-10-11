@@ -4,19 +4,19 @@ using Microsoft.EntityFrameworkCore;
 
 namespace EfCoreApp.Controllers
 {
-    public class OgrenciController : Controller
+    public class BootcampController : Controller
     {
 
         private readonly DataContext _context;
 
-        public OgrenciController(DataContext context)
+        public BootcampController(DataContext context)
         {
             _context = context;
         }
 
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Ogrenciler.ToListAsync());
+            return View(await _context.Kurslar.ToListAsync());
         }
         public IActionResult Create()
         {
@@ -24,9 +24,9 @@ namespace EfCoreApp.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(Ogrenci model)
+        public async Task<IActionResult> Create(Bootcamp model)
         {
-            _context.Ogrenciler.Add(model);
+            _context.Kurslar.Add(model);
             await _context.SaveChangesAsync();
             return RedirectToAction("index");
         }
@@ -38,20 +38,19 @@ namespace EfCoreApp.Controllers
             {
                 return NotFound();
             }
-            var ogr = await _context.Ogrenciler.Include(o=>o.KursKayitlari).ThenInclude(o=>o.Bootcamp).FirstOrDefaultAsync(o=>o.OgrenciId == id);
-            // var ogr = await _context.Ogrenciler.FirstOrDefaultAsync(o=>o.OgrenciId == id);
-            if (ogr == null)
+            var btc = await _context.Kurslar.Include(b=>b.KursKayitlari).ThenInclude(k=>k.Ogrenci).FirstOrDefaultAsync(o=>o.BootcampId == id);
+            if (btc == null)
             {
                 return NotFound();
             }
-            return View(ogr);
+            return View(btc);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, Ogrenci model)
+        public async Task<IActionResult> Edit(int id, Bootcamp model)
         {
-            if (id != model.OgrenciId)
+            if (id != model.BootcampId)
             {
                 return NotFound();
             }
@@ -64,7 +63,7 @@ namespace EfCoreApp.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!_context.Ogrenciler.Any(o => o.OgrenciId == model.OgrenciId))
+                    if (!_context.Kurslar.Any(o => o.BootcampId == model.BootcampId))
                     {
                         return NotFound();
                     }
@@ -87,24 +86,24 @@ namespace EfCoreApp.Controllers
                 return NotFound();
             }
             
-            var ogrenci = await _context.Ogrenciler.FindAsync(id);
-            if(ogrenci == null){
+            var bootcamp = await _context.Kurslar.FindAsync(id);
+            if(bootcamp == null){
                 return NotFound();
             }
 
-            return View(ogrenci);
+            return View(bootcamp);
         }
 
         [HttpPost]
 
         public async Task<IActionResult> Delete([FromForm]int id){
-            var ogrenci = await _context.Ogrenciler.FindAsync(id);
+            var bootcamp = await _context.Kurslar.FindAsync(id);
 
-            if(ogrenci ==null){
+            if(bootcamp ==null){
                 return NotFound();
             }
             
-            _context.Ogrenciler.Remove(ogrenci);
+            _context.Kurslar.Remove(bootcamp);
             await _context.SaveChangesAsync();
             return RedirectToAction("index");
         }

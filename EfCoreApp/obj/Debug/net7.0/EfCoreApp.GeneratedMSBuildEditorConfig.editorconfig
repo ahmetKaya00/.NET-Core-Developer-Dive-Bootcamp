@@ -18,6 +18,30 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Kaya3\Documents\GitHub\.NET-Core-Developer-Dive-Bootcamp\EfCoreApp
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Kaya3/Documents/GitHub/.NET-Core-Developer-Dive-Bootcamp/EfCoreApp/Views/BootcampKayit/create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9vdGNhbXBLYXlpdFxjcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaya3/Documents/GitHub/.NET-Core-Developer-Dive-Bootcamp/EfCoreApp/Views/BootcampKayit/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9vdGNhbXBLYXlpdFxpbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaya3/Documents/GitHub/.NET-Core-Developer-Dive-Bootcamp/EfCoreApp/Views/Bootcamp/create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9vdGNhbXBcY3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaya3/Documents/GitHub/.NET-Core-Developer-Dive-Bootcamp/EfCoreApp/Views/Bootcamp/delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9vdGNhbXBcZGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaya3/Documents/GitHub/.NET-Core-Developer-Dive-Bootcamp/EfCoreApp/Views/Bootcamp/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9vdGNhbXBcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaya3/Documents/GitHub/.NET-Core-Developer-Dive-Bootcamp/EfCoreApp/Views/Bootcamp/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9vdGNhbXBcaW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Kaya3/Documents/GitHub/.NET-Core-Developer-Dive-Bootcamp/EfCoreApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -28,6 +52,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Kaya3/Documents/GitHub/.NET-Core-Developer-Dive-Bootcamp/EfCoreApp/Views/Ogrenci/create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2dyZW5jaVxjcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaya3/Documents/GitHub/.NET-Core-Developer-Dive-Bootcamp/EfCoreApp/Views/Ogrenci/delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2dyZW5jaVxkZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaya3/Documents/GitHub/.NET-Core-Developer-Dive-Bootcamp/EfCoreApp/Views/Ogrenci/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2dyZW5jaVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaya3/Documents/GitHub/.NET-Core-Developer-Dive-Bootcamp/EfCoreApp/Views/Ogrenci/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2dyZW5jaVxpbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Kaya3/Documents/GitHub/.NET-Core-Developer-Dive-Bootcamp/EfCoreApp/Views/Shared/Error.cshtml]

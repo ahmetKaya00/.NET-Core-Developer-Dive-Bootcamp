@@ -1,0 +1,30 @@
+@model Bootcamp
+
+
+<h2>Bootcamp Güncelle</h2>
+<hr>
+
+<div class="row">
+    <div class="col-8">
+        <form asp-controller="Bootcamp" asp-action="edit" method="post">
+            <input type="hidden" asp-for="BootcampId">
+            <div class="mb-3">
+                <label asp-for="Baslik" class="form-label">Bootcamp Adı</label>
+                <input asp-for="Baslik" class="form-control">
+            </div>
+
+
+            <button type="submit" class="btn btn-success">Kaydet</button>
+        </form>
+    </div>
+    <div class="col-4">
+        <h4>Öğrenciler</h4>
+        <hr>
+        <ul>
+            @foreach(var item in @Model.KursKayitlari){
+                <li>@item.Ogrenci.AdSoyad</li>
+            }
+        </ul>
+
+    </div>
+</div>
