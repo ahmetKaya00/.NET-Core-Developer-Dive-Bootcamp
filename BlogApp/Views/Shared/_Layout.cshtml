@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +9,40 @@
     <link rel="stylesheet" href="/css/style.css">
     <title>Document</title>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg bg-success shadow-sm">
         <div class="container">
             <a href="/" class="navbar-brand">
-            <i class="bi bi-braces-asterisk"></i>BlogApp
+                <i class="bi bi-braces-asterisk"></i>BlogApp
             </a>
+
+            <ul class="navbar-nav ms-auto">
+                @if (User.Identity!.IsAuthenticated)
+                {
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">@User.Identity.Name</a>
+                    </li>
+                    <li class="nav-item">
+                        <a asp-controller="Users" asp-action="Logout" class="nav-link">Logout</a>
+                    </li>
+                }
+                else
+                {
+                    <li class="nav-item">
+                        <a asp-controller="Users" asp-action="Login" class="nav-link">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a asp-controller="Users" asp-action="Register" class="nav-link">Register</a>
+                    </li>
+                }
+            </ul>
         </div>
     </nav>
     <div class="container">
-    @RenderBody()
+        @RenderBody()
     </div>
+    @RenderSection("Scripts", required: false)
 </body>
+
 </html>

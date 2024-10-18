@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hmsWDrX4f/D+jY8Y4BkEfJhVu4VQs8n0DFsft+0BtQY=",
+  "Hash": "LzQFymnspY/AHy8vb9vqQf+tAnn8L22TE3G/go/CPBo=",
   "Source": "BlogApp",
   "BasePath": "_content/BlogApp",
   "Mode": "Default",
@@ -16,6 +16,25 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\Kaya3\\Documents\\GitHub\\.NET-Core-Developer-Dive-Bootcamp\\BlogApp\\wwwroot\\css\\style.css",
+      "SourceId": "BlogApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Kaya3\\Documents\\GitHub\\.NET-Core-Developer-Dive-Bootcamp\\BlogApp\\wwwroot\\",
+      "BasePath": "_content/BlogApp",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
+    },
     {
       "Identity": "C:\\Users\\Kaya3\\Documents\\GitHub\\.NET-Core-Developer-Dive-Bootcamp\\BlogApp\\wwwroot\\img\\1.png",
       "SourceId": "BlogApp",

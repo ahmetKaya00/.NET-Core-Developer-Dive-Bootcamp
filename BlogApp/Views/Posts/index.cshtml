@@ -1,18 +1,18 @@
-@model List<Post>
+@model PostsViewModel
 
-<div class="row">
-    <div class="col-md-8">
+<div class="row mt-2">
+    <div class="col-md-9">
 
             <div class="bg-white p-4">
                 <h1 class="h1 mb-4">Popüler Bloglar</h1>
-                @foreach(var post in Model){
+                @foreach(var post in Model.Posts){
                         <div class="card bg-transparent border-0 mb-3">
                             <div class="row">
                                 <div class="col-4">
                                     <img src="~/img/@post.Image" class="img-fluid rounded" alt="">
                                 </div>
                                 <div class="col-8">
-                                    <h5><a href="#" class="btn-link fw-bold">@post.Title</a></h5>
+                                    <h5><a href="/blogs/details/@post.Url" class="btn-link fw-bold">@post.Title</a></h5>
                                     <p>@post.Content</p>
                                     <a href="#" class="badge bg-danger bg-opacity-10 text-danger mb-2 fw-bold">Backend</a>
                                 </div>
@@ -29,6 +29,9 @@
                     </nav>
             </div>
     </div>
-    <div class="col-md-4"></div>
+    <div class="col-md-3">
+            <vc:tags-menu></vc:tags-menu>
+            <vc:new-posts></vc:new-posts>
+    </div>
 </div>
    

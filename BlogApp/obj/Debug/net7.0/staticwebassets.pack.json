@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\Kaya3\\Documents\\GitHub\\.NET-Core-Developer-Dive-Bootcamp\\BlogApp\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
       "Id": "C:\\Users\\Kaya3\\Documents\\GitHub\\.NET-Core-Developer-Dive-Bootcamp\\BlogApp\\wwwroot\\img\\1.png",
       "PackagePath": "staticwebassets\\img\\1.png"
     },
